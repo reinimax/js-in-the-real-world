@@ -1,0 +1,33 @@
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-on-hover {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+}
+
+.visible {
+  display: block !important;
+}
+
+/* Only relevant for this example */
+.container {
+  display: inline-block;
+}
+
+.link-list {
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: lightgray;
+  width: 100%;
+}
+
+.link-list a {
+  display: block;
+}

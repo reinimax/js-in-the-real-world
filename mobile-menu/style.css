@@ -1,0 +1,72 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background-color: rgb(214, 214, 214);
+}
+
+.mobile-menu li {
+  display: inline-block;
+  line-height: 20px;
+  padding: 15px;
+}
+
+.main {
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.mobile-toggler {
+  display: none;
+  background-color: black;
+  color: white;
+  height: 40px;
+  width: 60px;
+  margin: 5px;
+  border: 1px solid rgb(133, 19, 19);
+  border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+  .mobile-toggler {
+    display: block;
+  }
+
+  .mobile-menu {
+    position: absolute;
+    left: -150px;
+    width: 150px;
+    height: 100vh;
+    text-align: right;
+    background-color: rgba(53, 53, 53, 0.9);
+    z-index: -1;
+    transition: 0.3s;
+  }
+
+  .mobile-menu li {
+    display: block;
+  }
+
+  .mobile-menu li a {
+    color: white;
+  }
+}
+
+.collapse {
+  margin-left: 150px;
+}
+
+.move-in {
+  left: 0;
+  transition: 1s;
+}

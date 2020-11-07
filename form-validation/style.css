@@ -1,0 +1,33 @@
+.invalid {
+  border: 1px solid red !important;
+  box-shadow: 1px 1px 3px red;
+}
+
+.valid {
+  border: 1px solid rgb(28, 100, 0) !important;
+  box-shadow: 1px 1px 3px rgb(28, 100, 0);
+}
+
+form {
+  margin: 50px auto 0;
+  width: 450px;
+  height: 600px;
+  border: 1px solid black;
+  padding: 30px;
+}
+
+form fieldset {
+  height: 100px;
+}
+
+form input {
+  width: 100%;
+  margin: 10px 0;
+}
+
+button {
+  box-sizing: border-box;
+  width: 100px;
+  height: 50px;
+  margin: 20px 175px;
+}

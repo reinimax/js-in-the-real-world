@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JS in the Real World</title>
+    <link href="reset.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <form novalidate>
+      <fieldset>
+        <label for="email">E-Mail (required)</label>
+        <input type="email" id="email" name="email" />
+        <span id="mail-error">test</span>
+      </fieldset>
+
+      <fieldset>
+        <label for="country">Country</label>
+        <input type="text" id="country" name="country" />
+        <span id="country-error"></span>
+      </fieldset>
+
+      <fieldset>
+        <label for="zip-code">Zip Code</label>
+        <input type="text" id="zip-code" name="zip-code" />
+        <span id="zip-error"></span>
+      </fieldset>
+
+      <fieldset>
+        <label for="pwd"
+          >Password: 8-30 characters, at least 1 number, 1 lowercase- and 1
+          uppercase letter (required)</label
+        >
+        <input type="password" id="pwd" name="password" />
+        <span id="pwd-error"></span>
+      </fieldset>
+
+      <fieldset>
+        <label for="pwd-confirm">Confirm password (required)</label>
+        <input
+          type="password"
+          id="pwd-confirm"
+          name="password-confirm"
+          class="formfield"
+        />
+        <span id="pwd-confirm-error"></span>
+      </fieldset>
+      <button type="button">Sign up</button>
+      <span id="submit-message"></span>
+    </form>
+    <script src="validation.js"></script>
+  </body>
+</html>
